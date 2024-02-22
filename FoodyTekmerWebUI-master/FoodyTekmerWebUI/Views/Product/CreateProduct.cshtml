@@ -1,0 +1,25 @@
+﻿@model FoodyTekmerEntityLayer.Concrete.Product
+@{
+    ViewData["Title"] = "CreateProduct";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+<h1>Yeni Ürün Girişi</h1>
+
+<form method="post">
+    <label>Ürün Adı</label>
+    <input type="text" class="form-control" asp-for="Name" style="border:solid" />
+    <br/>
+       <label>Ürün URL</label> 
+    <input type="text" class="form-control" asp-for="ImageUrl" style="border:solid" />
+    <br/>
+       <label>Eski Fiyat</label>
+    <input type="text" class="form-control" asp-for="OldPrice" style="border:solid" />
+    <br/>
+       <label>Yeni Fiyat</label>
+    <input type="text" class="form-control" asp-for="NewPrice" style="border:solid" />
+
+
+    <button class="btn btn-info">Ürünü Kaydet</button>
+
+</form>
+
